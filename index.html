@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bootstrap</title>
+        <title>TP Integrador - JS</title>
         <!-- Icon -->
     <link rel="icon" href="./img/bootstrap.svg">
     <!-- Bootstrap -->
@@ -36,7 +36,7 @@
                     <a class="nav-link" href="#conv-orador">Conviertete en orador</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-success" href="#">Comprar tickets</a>
+                    <a class="nav-link text-success" href="#comprar-tickets">Comprar tickets</a>
                   </li>
                 </ul>
               </div>
@@ -163,6 +163,83 @@
             </form>
         </div>
     </section>
+    <section id="comprar-tickets">
+        <div class="contenedor-container">
+            <div class="container">
+                <div class="row  justify-content-center">
+                    <div class="col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <div class="box-categorias">
+                            <h4>Estudiante</h4>
+                            <p>Tienen un descuento</p>
+                            <p>80%</p>
+                            <p>* presentar documentacion</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <div class="box-categorias">
+                            <h4>Trainee</h4>
+                            <p>Tienen un descuento</p>
+                            <p>50%</p>
+                            <p>* presentar documentacion</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-4 col-sm-6 ">
+                        <div class="box-categorias b-w2">
+                            <h4>Junior</h4>
+                            <p>Tienen un descuento</p>
+                            <p>15%</p>
+                            <p>* presentar documentacion</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="seccion-form">
+                    <h6 class="fw-light mt-3 text-center">VENTA</h6>
+                    <h1 class="text-center">VALOR DE TICKET $200</h1>
+                    <form id="form">
+                        <div class="mb-3 row">
+                            <div class="col-6">
+                              <input type="text" class="form-control" id="nombre" aria-describedby="nombre" placeholder="Nombre">
+                            </div>
+                            <div class="col-6">
+                              <input type="text" class="form-control" id="apellido" aria-describedby="nombre" placeholder="Apellido">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                          <input type="email" class="form-control" id="email" placeholder="Correo">
+                        </div>
+                        <div class="mb-3 row">
+                            <div class="col-6">
+                                <label for="cantidad" class="form-label">Cantidad</label>
+                                <input type="number" class="form-control" name="nombre" id="cantidad" placeholder="Cantidad">
+                            </div>
+                            <div class="col-6">
+                                <label for="cantidad" class="form-label">Categoria</label>
+                                <select name="categoria" id="categoria" class="form-select">
+                                    <option value="1">Estudiante</option>
+                                    <option value="2">Trainee</option>
+                                    <option value="3">Junior</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" id="total" name="total" class="form-control" placeholder="Total a Pagar: $" disabled>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <input type="reset" class="btn btn-success btn-form" value="Borrar">
+                            </div>
+                            <div class="col-6">
+                                <button type="submit" class="btn btn-success btn-form" id="btn-submit">Resumen</button>
+                            </div>
+                        </div>
+                      </form>
+                </div>
+
+            </div>
+        </div>
+        
+    </section>
     <footer class="mt-4 d-flex align-items-center">
         <div class="container d-flex pt-4">
             <ul class="d-flex justify-content-center">
@@ -179,5 +256,8 @@
      <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <!-- JS propios -->
+<script src="./js/main.js"></script>
 </body>
 </html>

@@ -43,6 +43,39 @@ nav li a:hover{
     padding:10px;
 }
 
+nav.fixed#menu {
+    animation: popDown 0.5s;
+}
+
+
+nav.fixed {
+    bottom: inherit;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width:100%;
+    z-index: 3; /*Quitar mas tarde si hace falta*/
+    /* height:55px; */
+    padding:1px !important;
+
+}
+
+/* nav.fixed .container{
+    margin:0 !important;
+} */
+
+@keyframes popDown {
+    0% {
+      transform: translateY(-100px);
+    }
+  }
+
+.active-item{           /*Para utilizar en js*/
+    color:var(--bs-danger) !important;
+    transform: translateX(5px) scale(1) !important;
+}
+
+
 /* -----------------------------Header----------------------------- */
 .fondo-img{
     width:100%;
@@ -126,6 +159,41 @@ form>button{
     width:100%;
     padding:14px !important;
     font-size: larger !important;
+}
+
+
+/* --------------------------Seccion tickets--------------------------- */
+#comprar-tickets{
+    margin-top:100px;
+    height:700px;
+    /* border:1px solid #000; */
+}
+
+.box-categorias{
+    border:2px solid var(--bs-primary);
+    text-align:center;
+    height:210px;
+    width:250px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.box-categorias p:last-child{
+    color:var(--bs-secondary);
+}
+
+.b-w2{
+    border:2px solid var(--bs-warning);
+}
+
+.btn-form{
+    width:100%;
+    /* background:var(--bs-success); */
+}
+
+#total{
+    padding:10px;
 }
 
 /* -----------------------------Footer----------------------------- */
